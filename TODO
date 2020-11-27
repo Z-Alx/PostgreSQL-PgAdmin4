@@ -7,5 +7,5 @@
 7) Для подключения к БД необходимо узнать адрес хоста, для этого идем в терминал и пишем команду (docker container ls) ищем образ БД и копируем его CONTAINER ID
 8) Пишем команду (docker inspect CONTAINER ID) например :docker inspect a9117ff70ca1 и находим строчку IPAddress": "172.18.0.2", адрес 172.18.0.2 нам и нужен
 9) Переходим на страницу админки, в левой колонке кликаем ПКМ на server -> create -> server
-10) Заполняем поле name, на вкладке connection заполняем поля Hostname, Port, Username, Passwdord (172.18.0.2, 5432, admin@admin.com, pwdpwd)
+10) Заполняем поле name, на вкладке connection заполняем поля Hostname, Port, Username, Passwdord (172.18.0.2, 5432, test, 123456)
 11) Save и БД подключена
