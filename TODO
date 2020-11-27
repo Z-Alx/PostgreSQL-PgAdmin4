@@ -5,7 +5,8 @@
 5) Открыть терминал и перейти в каталог TPostgreSQL-PgAdmin4 и запустить docker-compose.yml, дождаться окончания скачивания и установки.
 6) Перейти по адресу http://127.1.1.0:80 и авторизоваться (admin@admin.com\pwdpwd)
 7) Для подключения к БД необходимо узнать адрес хоста, для этого идем в терминал и пишем команду (docker container ls) ищем образ БД и копируем его CONTAINER ID
+ (по имени контейнера "postgresql-pgadmin4_db_1" подкючается тоже)
 8) Пишем команду (docker inspect CONTAINER ID) например :docker inspect a9117ff70ca1 и находим строчку IPAddress": "172.18.0.2", адрес 172.18.0.2 нам и нужен
 9) Переходим на страницу админки, в левой колонке кликаем ПКМ на server -> create -> server
-10) Заполняем поле name, на вкладке connection заполняем поля Hostname, Port, Username, Passwdord (172.18.0.2, 5432, test, 123456)
+10) Заполняем поле name, на вкладке connection заполняем поля Hostname, Port, Username, Passwdord (postgresql-pgadmin4_db_1, 5432, test, 123456)
 11) Save и БД подключена
